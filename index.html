@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LouxSpace - Accueil</title>
+    <link rel="stylesheet" href="accueil.css" />
+    <link rel="icon" type="image/png" href="img/LouxSpace.png" />
+  </head>
+  <body id="body">
+    <header>
+      <div>
+        <a href="/"
+          ><img src="img/LouxSpace.png" alt="Logo du site" id="logo"
+        /></a>
+      </div>
+      <div>
+        <h3 id="site-title">LouxSpace</h3>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="/">Accueil</a></li>
+          <li><a href="about.html">À propos</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="container">
+      <div id="welcome">LouxSpace</div>
+      <div id="description">
+        Bienvenue sur LouxSpace, votre destination pour explorer l'univers de
+        manière interactive et immersive. Découvrez des outils de codage, des
+        ressources et des expériences uniques qui vous rapprochent des étoiles.
+      </div>
+      <div class="cards">
+        <div class="card">
+          <h4>Outils de codage</h4>
+          <p>Description des outils de codage</p>
+        </div>
+        <div class="card">
+          <h4>Ressources</h4>
+          <p>Description des ressources</p>
+        </div>
+        <div class="card">
+          <h4>Expériences</h4>
+          <p>Description des expériences</p>
+        </div>
+      </div>
+    </div>
+    <div class="separator"></div>
+    <div id="presentation">
+      <div id="presentation-title">
+        <h2>Pourquoi choisir LouxSpace ?</h2>
+        <p>
+          LouxSpace offre une expérience unique pour explorer l'univers de
+          manière interactive et immersive. Notre plateforme combine les
+          dernières technologies pour créer des contenus engageants et
+          éducatifs.
+        </p>
+      </div>
+      <div class="cards">
+        <div class="present-card">
+          <h4>Avantages</h4>
+          <p>Description des avantages</p>
+        </div>
+        <div class="present-card">
+          <h4>Caractéristiques</h4>
+          <p>Description des caractéristiques</p>
+        </div>
+        <div class="present-card">
+          <h4>Communauté</h4>
+          <p>Description de la communauté</p>
+        </div>
+      </div>
+      <div class="cards">
+        <div class="statscard">
+          1000
+          <h4>Utilisateurs</h4>
+        </div>
+        <div class="statscard">
+          500
+          <h4>Projets</h4>
+        </div>
+        <div class="statscard">
+          300
+          <h4>Contributions</h4>
+        </div>
+      </div>
+      <footer>
+        <p>&copy; 2026 LouxSpace. Tous droits réservés.</p>
+      </footer>
+    </div>
+    <div class="separator"></div>
+    <div id="footer-spacer">
+      <img src="img/LouxSpace.png" alt="Logo de LouxSpace" id="footer-logo" />
+      <div id="middle_template">
+        <div class="category">
+          <h2>Informations</h2>
+          <ul>
+            <li><a href="about.html">À propos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="category">
+          <h2>Suivez-nous</h2>
+          <ul>
+            <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+            <li><a href="https://youtube.com" target="_blank">YouTube</a></li>
+            <li>
+              <a href="https://instagram.com" target="_blank">Instagram</a>
+            </li>
+          </ul>
+        </div>
+        <div class="category">
+          <h2>Ressources</h2>
+          <ul>
+            <li><a href="https://github.com" target="_blank">GitHub</a></li>
+            <li>
+              <a href="https://stackoverflow.com" target="_blank"
+                >Stack Overflow</a
+              >
+            </li>
+            <li>
+              <a href="https://developer.mozilla.org" target="_blank"
+                >MDN Web Docs</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="side empty"></div>
+    </div>
+  </body>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.globe.min.js"></script>
+  <script>
+    VANTA.GLOBE({
+      el: "#container",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.0,
+      minWidth: 200.0,
+      scale: 1.0,
+      scaleMobile: 1.0,
+    });
+  </script>
+</html>
